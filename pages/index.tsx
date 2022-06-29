@@ -13,20 +13,13 @@ const Home: NextPage = () => {
             </div>
           ))}
         </ul>
-        <ul>
-          {["a", "b", "c", "", "d"].map((c, index) => (
-            <li className="bg-red-500 py-2 empty:hidden" key={index}>
-              {c}
-            </li>
-          ))}
-        </ul>
         <div className="flex justify-between mt-2 pt-2 border-t-2 border-dashed">
           <span>Total</span>
           <span className="font-semibold">$10</span>
         </div>
-        <button className="mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-1/2 mx-auto hover:bg-teal-500 hover:text-black active:bg-yellow-500 focus:bg-red-500">
+        <div className="mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-1/2 mx-auto hover:bg-teal-500 hover:text-black active:bg-yellow-500 focus:bg-red-500">
           Checkout
-        </button>
+        </div>
       </div>
       <div className="bg-white overflow-hidden rounded-2xl shadow-xl">
         <div className="bg-blue-500 p-6 pb-14">
