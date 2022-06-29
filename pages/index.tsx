@@ -5,9 +5,9 @@ const Home: NextPage = () => {
     <form className="flex flex-col space-y-2 bg-blue-500 p-5 focus-within:bg-blue-100">
       <input
         type="text"
-        disabled
+        required
         placeholder="Username"
-        className="disabled:opacity-0"
+        className="required:bg-yellow-500 invalid:bg-red-500 valid:bg-teal-500"
       />
       <input type="password" required placeholder="Password" className="" />
       <input type="submit" value="login" className="bg-white" />
