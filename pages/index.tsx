@@ -7,13 +7,17 @@ const Home: NextPage = () => {
         <span className="font-semibold text-3xl">Select Item</span>
         <ul>
           {[1, 2, 3, 4, 5].map((i) => (
-            <div
-              key={i}
-              className="flex justify-between my-2 odd:bg-blue-50 even:bg-yellow-100"
-            >
+            <div key={i} className="flex justify-between my-2">
               <span className="text-gray-500">Grey Chair</span>
               <span className="font-semibold">$19</span>
             </div>
+          ))}
+        </ul>
+        <ul>
+          {["a", "b", "c", "", "d"].map((c, index) => (
+            <li className="bg-red-500 py-2 empty:hidden" key={index}>
+              {c}
+            </li>
           ))}
         </ul>
         <div className="flex justify-between mt-2 pt-2 border-t-2 border-dashed">
