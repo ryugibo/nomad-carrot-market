@@ -7,8 +7,14 @@ const Home: NextPage = () => {
         type="text"
         required
         placeholder="Username"
-        className="border p-1 border-gray-400 rounded"
+        className="border p-1 border-gray-400 rounded peer"
       />
+      <span className="hidden peer-invalid:block text-red-500">
+        This input is invalid
+      </span>
+      <span className="hidden peer-valid:block text-teal-500">
+        Awesome username
+      </span>
       <input type="submit" value="Login" className="bg-white" />
     </form>
   );
